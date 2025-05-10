@@ -53,6 +53,6 @@ def test8_create_kit_without_name_parameter():
     current_kit_body.pop("name")
     negative_assert_400(current_kit_body)
 
-def test9_create_kit_with_number_in_name_field():
+def test9_create_kit_without_number_in_name_field():
     current_kit_body = get_kit_body(data.test9_kit_name)
     negative_assert_400(current_kit_body)
